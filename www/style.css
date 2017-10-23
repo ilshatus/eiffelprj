@@ -1,0 +1,319 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of Eric Meyer's CSS Reset */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	width: 100%;
+}
+
+.header {
+	position: absolute;
+	left: 100px;
+	right: 100px;
+	top: -1px;
+	background-color: rgba(255, 255, 255, 1);
+	border: 1px solid black;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 10px;
+}
+
+.header .header-info-block {
+	margin-left: 10px;
+	margin-right: 10px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: rgba(240, 240, 240, 0.6);
+	padding: 10px;
+}
+.header h1 {
+	font: 300% serif;
+	display: inline-block;
+}
+
+.header a {
+	float: right;
+	margin-right: 10px;
+	font: 200% serif;
+	text-decoration: none;
+	color: gray;
+}
+
+.header a:hover { 
+    text-decoration: underline;
+    color: red;
+}
+
+.outside-block {
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	padding: 10px;	
+	background: #FFE680;
+	display: block;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+.inside-block {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 30px;
+	display: none;
+	background-color: rgba(240, 240, 240, 0.6);
+}
+
+.inside-block h1 {
+	font: 170% arial;
+}
+
+.inside-block p.error {
+	margin-top: 3px;
+	color: red;
+	font-family: arial;
+}
+
+.inside-block input {
+    height:20px;
+    width:300px;
+    padding:5px 8px;
+}
+
+input, textarea {
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
+}
+
+input:focus, textarea:focus {
+    background: #fff;
+    border:1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+}
+
+.inside-block textarea{
+	padding:5px 8px;
+	height:30px;
+    width:300px;
+  	vertical-align: middle;
+}
+
+
+.inside-block input.text {
+	
+}
+
+input.date {
+	background: white url('date/img/cal.gif') 99% 50% no-repeat;
+}
+
+.page-info-block {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	background: #ccb4b4;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: rgba(240, 240, 240, 0.6);
+}
+
+.page-info-block h1 {
+	font: 300% serif;
+}
+
+.page-info-block p {
+}
+
+
+.buttons-block {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	background: #ccb4b4;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	overflow: hidden;
+	background-color: rgba(240, 240, 240, 0.6);
+}
+
+.buttons-block .button {
+	float: right;
+	margin-left: 10px;	
+	vertical-align: middle;
+	display: none;
+}
+
+.inside-block .button {
+	margin-left: 10px;	
+	vertical-align: middle;
+}
+
+.button {
+    background-color: #68b12f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+    background: -webkit-linear-gradient(top, #68b12f, #50911e);
+    background: -moz-linear-gradient(top, #68b12f, #50911e);
+    background: -ms-linear-gradient(top, #68b12f, #50911e);
+    background: -o-linear-gradient(top, #68b12f, #50911e);
+    background: linear-gradient(top, #68b12f, #50911e);
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+.button:hover {
+    opacity:.85;
+    cursor: pointer;
+}
+.button:active {
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset;
+    -webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+    -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+    -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+    -o-box-shadow: 0 0 10px 5px #356b0b inset;
+}
+
+#overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	z-index: 5000;
+}
+
+#overlay-inside-block {
+	position: fixed;
+	background-color: rgba(240, 240, 240, 0.95);
+	top: 110px;
+	left: 400px;
+	right: 400px;
+	padding: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+#overlay-inside-block .content-block {
+	background-color: rgba(246, 246, 246, 0.95);
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+#overlay-inside-block .content-block p {
+	font: 150% arial;
+	margin-bottom: 2px;
+	font-weight: lighter;
+}
+
+#overlay-inside-block .content-block input {
+	height: 15px;
+    width: 130px;
+    padding:5px 8px;
+}
+
+#overlay-inside-block .content-block .button {
+	float: right;
+	margin-right: 10px;
+}
+
+#overlay-inside-block h1 {
+	font: 200% serif;
+}
+
+.error-response {
+	font: 250% serif;
+	font-weight: bolder;
+	color: red;
+	text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.good-response {
+	font: 250% serif;
+	font-weight: bolder;
+	color: lime;
+	text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+
+

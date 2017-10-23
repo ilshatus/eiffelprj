@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Admin panel</title>
+	<script src="/js/jquery-3.1.1.min.js"></script>
+	<script src="/admin/js/admin.js"></script>
+	<link href="/style.css" rel="stylesheet">
+	<link href="/admin/admin_style.css" rel="stylesheet">
+	<link rel="stylesheet" href="/date/jquery-ui.css">
+	<script src="/date/jquery-ui.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="header-info-block">
+			<h1>Innopolis University: administrator panel, 2016</h1>
+			<a href="/">Reporting page</a>			
+		</div>
+	</div>
+	<div class="outside-block">
+		<div id="queries-block">
+			<select id="selecter">    
+				<option value="-1" hidden disabled selected="selected">Choose query</option>
+				<option value="0">All publications</option>
+				<option value="1">Cumulative information</option>
+				<option value="2">Courses taught</option>
+				<option value="3">Number of supervised students</option>
+				<option value="4">Number of research collaborations</option>
+				<option value="5">List of PhDs</option>
+				<option value="6">List of patents</option>
+			</select>
+		</div>
+
+		<div id="content-block">
+		</div>
+	</div>
+</body>
+</html>
